@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2BC5F11D6EF1B400715D5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2BC5F01D6EF1B400715D5F /* AppDelegate.m */; };
+		2B2BC5F41D6EF1B400715D5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2BC5F31D6EF1B400715D5F /* main.m */; };
+		2B2BC5F61D6EF1B400715D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2BC5F51D6EF1B400715D5F /* Assets.xcassets */; };
+		2B2BC5F91D6EF1B400715D5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B2BC5F71D6EF1B400715D5F /* MainMenu.xib */; };
+		2B2BC6041D6EF1B400715D5F /* CalendarMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2BC6031D6EF1B400715D5F /* CalendarMessageTests.m */; };
+		2B2BC60F1D6EF1B400715D5F /* CalendarMessageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2BC60E1D6EF1B400715D5F /* CalendarMessageUITests.m */; };
+		2B2CF8B81D740E7100FF5EDC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8B61D740E7100FF5EDC /* MainViewController.m */; };
+		2B2CF8B91D740E7100FF5EDC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B2CF8B71D740E7100FF5EDC /* MainViewController.xib */; };
+		2B2CF8BD1D741FD400FF5EDC /* ZHWNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8BC1D741FD400FF5EDC /* ZHWNetwork.m */; };
+		2B2CF8CC1D7422D900FF5EDC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8C01D7422D900FF5EDC /* AFHTTPSessionManager.m */; };
+		2B2CF8CD1D7422D900FF5EDC /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8C31D7422D900FF5EDC /* AFNetworkReachabilityManager.m */; };
+		2B2CF8CE1D7422D900FF5EDC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8C51D7422D900FF5EDC /* AFSecurityPolicy.m */; };
+		2B2CF8CF1D7422D900FF5EDC /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8C71D7422D900FF5EDC /* AFURLRequestSerialization.m */; };
+		2B2CF8D01D7422D900FF5EDC /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8C91D7422D900FF5EDC /* AFURLResponseSerialization.m */; };
+		2B2CF8D11D7422D900FF5EDC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8CB1D7422D900FF5EDC /* AFURLSessionManager.m */; };
+		2B2CF8D81D74433600FF5EDC /* ServerResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8D71D74433600FF5EDC /* ServerResponseModel.m */; };
+		2B2CF8EB1D74447900FF5EDC /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8DC1D74447900FF5EDC /* MJExtensionConst.m */; };
+		2B2CF8EC1D74447900FF5EDC /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8DE1D74447900FF5EDC /* MJFoundation.m */; };
+		2B2CF8ED1D74447900FF5EDC /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8E01D74447900FF5EDC /* MJProperty.m */; };
+		2B2CF8EE1D74447900FF5EDC /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8E21D74447900FF5EDC /* MJType.m */; };
+		2B2CF8EF1D74447900FF5EDC /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8E41D74447900FF5EDC /* NSObject+MJCoding.m */; };
+		2B2CF8F01D74447900FF5EDC /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8E61D74447900FF5EDC /* NSObject+MJKeyValue.m */; };
+		2B2CF8F11D74447900FF5EDC /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8E81D74447900FF5EDC /* NSObject+MJProperty.m */; };
+		2B2CF8F21D74447900FF5EDC /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CF8EA1D74447900FF5EDC /* NSString+MJExtension.m */; };
+		2BD913891D712A6700EC3090 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9137E1D712A6700EC3090 /* FMDatabase.m */; };
+		2BD9138A1D712A6700EC3090 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD913801D712A6700EC3090 /* FMDatabaseAdditions.m */; };
+		2BD9138B1D712A6700EC3090 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD913821D712A6700EC3090 /* FMDatabasePool.m */; };
+		2BD9138C1D712A6700EC3090 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD913841D712A6700EC3090 /* FMDatabaseQueue.m */; };
+		2BD9138D1D712A6700EC3090 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD913871D712A6700EC3090 /* FMResultSet.m */; };
+		2BD9138E1D712A6700EC3090 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BD913881D712A6700EC3090 /* Info.plist */; };
+		2BD913901D712B1200EC3090 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD9138F1D712B1200EC3090 /* libsqlite3.tbd */; };
+		2BD9139C1D71339A00EC3090 /* ZHWDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9139B1D71339A00EC3090 /* ZHWDBHelper.m */; };
+		2BEECA081D701E6300A1C53D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEECA071D701E6300A1C53D /* EventKit.framework */; };
+		2BEECA0D1D70221000A1C53D /* ZHWEventTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEECA0C1D70221000A1C53D /* ZHWEventTool.m */; };
+		2BF5037A1D76C101005486C3 /* AppleScript脚本.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2BF503791D76C101005486C3 /* AppleScript脚本.scpt */; };
+		2BF5037C1D76C3F2005486C3 /* quit.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2BF5037B1D76C3F2005486C3 /* quit.scpt */; };
+		2BF5037F1D76D640005486C3 /* HeartbeatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF5037E1D76D640005486C3 /* HeartbeatModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B2BC6001D6EF1B400715D5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2BC5E41D6EF1B400715D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2BC5EB1D6EF1B400715D5F;
+			remoteInfo = CalendarMessage;
+		};
+		2B2BC60B1D6EF1B400715D5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2BC5E41D6EF1B400715D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2BC5EB1D6EF1B400715D5F;
+			remoteInfo = CalendarMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B06469B1D7577ED002393C5 /* Constant.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.pch; sourceTree = "<group>"; };
+		2B2BC5EC1D6EF1B400715D5F /* CalendarMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2BC5EF1D6EF1B400715D5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B2BC5F01D6EF1B400715D5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B2BC5F31D6EF1B400715D5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B2BC5F51D6EF1B400715D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B2BC5F81D6EF1B400715D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2B2BC5FA1D6EF1B400715D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2BC5FF1D6EF1B400715D5F /* CalendarMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2BC6031D6EF1B400715D5F /* CalendarMessageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarMessageTests.m; sourceTree = "<group>"; };
+		2B2BC6051D6EF1B400715D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2BC60A1D6EF1B400715D5F /* CalendarMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2BC60E1D6EF1B400715D5F /* CalendarMessageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarMessageUITests.m; sourceTree = "<group>"; };
+		2B2BC6101D6EF1B400715D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2CF8B51D740E7100FF5EDC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2B2CF8B61D740E7100FF5EDC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2B2CF8B71D740E7100FF5EDC /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2B2CF8BB1D741FD400FF5EDC /* ZHWNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHWNetwork.h; sourceTree = "<group>"; };
+		2B2CF8BC1D741FD400FF5EDC /* ZHWNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHWNetwork.m; sourceTree = "<group>"; };
+		2B2CF8BF1D7422D900FF5EDC /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		2B2CF8C01D7422D900FF5EDC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		2B2CF8C11D7422D900FF5EDC /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		2B2CF8C21D7422D900FF5EDC /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		2B2CF8C31D7422D900FF5EDC /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		2B2CF8C41D7422D900FF5EDC /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		2B2CF8C51D7422D900FF5EDC /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		2B2CF8C61D7422D900FF5EDC /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		2B2CF8C71D7422D900FF5EDC /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		2B2CF8C81D7422D900FF5EDC /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		2B2CF8C91D7422D900FF5EDC /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		2B2CF8CA1D7422D900FF5EDC /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		2B2CF8CB1D7422D900FF5EDC /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		2B2CF8D61D74433600FF5EDC /* ServerResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerResponseModel.h; sourceTree = "<group>"; };
+		2B2CF8D71D74433600FF5EDC /* ServerResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerResponseModel.m; sourceTree = "<group>"; };
+		2B2CF8DA1D74447900FF5EDC /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		2B2CF8DB1D74447900FF5EDC /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		2B2CF8DC1D74447900FF5EDC /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		2B2CF8DD1D74447900FF5EDC /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		2B2CF8DE1D74447900FF5EDC /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		2B2CF8DF1D74447900FF5EDC /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		2B2CF8E01D74447900FF5EDC /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		2B2CF8E11D74447900FF5EDC /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		2B2CF8E21D74447900FF5EDC /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		2B2CF8E31D74447900FF5EDC /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		2B2CF8E41D74447900FF5EDC /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		2B2CF8E51D74447900FF5EDC /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		2B2CF8E61D74447900FF5EDC /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		2B2CF8E71D74447900FF5EDC /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		2B2CF8E81D74447900FF5EDC /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		2B2CF8E91D74447900FF5EDC /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		2B2CF8EA1D74447900FF5EDC /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		2BD9137D1D712A6700EC3090 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		2BD9137E1D712A6700EC3090 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		2BD9137F1D712A6700EC3090 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		2BD913801D712A6700EC3090 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		2BD913811D712A6700EC3090 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		2BD913821D712A6700EC3090 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		2BD913831D712A6700EC3090 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		2BD913841D712A6700EC3090 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		2BD913851D712A6700EC3090 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		2BD913861D712A6700EC3090 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		2BD913871D712A6700EC3090 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		2BD913881D712A6700EC3090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD9138F1D712B1200EC3090 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2BD9139A1D71339A00EC3090 /* ZHWDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHWDBHelper.h; sourceTree = "<group>"; };
+		2BD9139B1D71339A00EC3090 /* ZHWDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHWDBHelper.m; sourceTree = "<group>"; };
+		2BEECA071D701E6300A1C53D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		2BEECA0B1D70221000A1C53D /* ZHWEventTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHWEventTool.h; sourceTree = "<group>"; };
+		2BEECA0C1D70221000A1C53D /* ZHWEventTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHWEventTool.m; sourceTree = "<group>"; };
+		2BF503791D76C101005486C3 /* AppleScript脚本.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleScript脚本.scpt"; sourceTree = "<group>"; };
+		2BF5037B1D76C3F2005486C3 /* quit.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = quit.scpt; sourceTree = "<group>"; };
+		2BF5037D1D76D640005486C3 /* HeartbeatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartbeatModel.h; sourceTree = "<group>"; };
+		2BF5037E1D76D640005486C3 /* HeartbeatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartbeatModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B2BC5E91D6EF1B400715D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD913901D712B1200EC3090 /* libsqlite3.tbd in Frameworks */,
+				2BEECA081D701E6300A1C53D /* EventKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2BC5FC1D6EF1B400715D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2BC6071D6EF1B400715D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B2BC5E31D6EF1B400715D5F = {
+			isa = PBXGroup;
+			children = (
+				2BF503791D76C101005486C3 /* AppleScript脚本.scpt */,
+				2BF5037B1D76C3F2005486C3 /* quit.scpt */,
+				2B2BC5EE1D6EF1B400715D5F /* CalendarMessage */,
+				2B2BC6021D6EF1B400715D5F /* CalendarMessageTests */,
+				2B2BC60D1D6EF1B400715D5F /* CalendarMessageUITests */,
+				2B2BC5ED1D6EF1B400715D5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B2BC5ED1D6EF1B400715D5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B2BC5EC1D6EF1B400715D5F /* CalendarMessage.app */,
+				2B2BC5FF1D6EF1B400715D5F /* CalendarMessageTests.xctest */,
+				2B2BC60A1D6EF1B400715D5F /* CalendarMessageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B2BC5EE1D6EF1B400715D5F /* CalendarMessage */ = {
+			isa = PBXGroup;
+			children = (
+				2B2BC5EF1D6EF1B400715D5F /* AppDelegate.h */,
+				2B2BC5F01D6EF1B400715D5F /* AppDelegate.m */,
+				2BEECA091D7021AC00A1C53D /* Tools */,
+				2B2BC61F1D6EF9EE00715D5F /* MainController */,
+				2B2BC5F71D6EF1B400715D5F /* MainMenu.xib */,
+				2B2BC5F21D6EF1B400715D5F /* Supporting Files */,
+			);
+			path = CalendarMessage;
+			sourceTree = "<group>";
+		};
+		2B2BC5F21D6EF1B400715D5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BD9138F1D712B1200EC3090 /* libsqlite3.tbd */,
+				2BEECA071D701E6300A1C53D /* EventKit.framework */,
+				2B2BC5F51D6EF1B400715D5F /* Assets.xcassets */,
+				2B2BC5FA1D6EF1B400715D5F /* Info.plist */,
+				2B2BC5F31D6EF1B400715D5F /* main.m */,
+				2B06469B1D7577ED002393C5 /* Constant.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B2BC6021D6EF1B400715D5F /* CalendarMessageTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B2BC6031D6EF1B400715D5F /* CalendarMessageTests.m */,
+				2B2BC6051D6EF1B400715D5F /* Info.plist */,
+			);
+			path = CalendarMessageTests;
+			sourceTree = "<group>";
+		};
+		2B2BC60D1D6EF1B400715D5F /* CalendarMessageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B2BC60E1D6EF1B400715D5F /* CalendarMessageUITests.m */,
+				2B2BC6101D6EF1B400715D5F /* Info.plist */,
+			);
+			path = CalendarMessageUITests;
+			sourceTree = "<group>";
+		};
+		2B2BC61F1D6EF9EE00715D5F /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				2B2BC6201D6EF9EE00715D5F /* Controller */,
+				2B2BC6211D6EF9EE00715D5F /* Model */,
+				2B2BC6221D6EF9EE00715D5F /* View */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		2B2BC6201D6EF9EE00715D5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B2CF8B51D740E7100FF5EDC /* MainViewController.h */,
+				2B2CF8B61D740E7100FF5EDC /* MainViewController.m */,
+				2B2CF8B71D740E7100FF5EDC /* MainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2B2BC6211D6EF9EE00715D5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B2CF8D61D74433600FF5EDC /* ServerResponseModel.h */,
+				2B2CF8D71D74433600FF5EDC /* ServerResponseModel.m */,
+				2BF5037D1D76D640005486C3 /* HeartbeatModel.h */,
+				2BF5037E1D76D640005486C3 /* HeartbeatModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B2BC6221D6EF9EE00715D5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B2CF8BA1D741FC000FF5EDC /* ZHWNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				2B2CF8BE1D7422D900FF5EDC /* AFNetworking */,
+				2B2CF8BB1D741FD400FF5EDC /* ZHWNetwork.h */,
+				2B2CF8BC1D741FD400FF5EDC /* ZHWNetwork.m */,
+			);
+			path = ZHWNetWork;
+			sourceTree = "<group>";
+		};
+		2B2CF8BE1D7422D900FF5EDC /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2B2CF8BF1D7422D900FF5EDC /* AFHTTPSessionManager.h */,
+				2B2CF8C01D7422D900FF5EDC /* AFHTTPSessionManager.m */,
+				2B2CF8C11D7422D900FF5EDC /* AFNetworking.h */,
+				2B2CF8C21D7422D900FF5EDC /* AFNetworkReachabilityManager.h */,
+				2B2CF8C31D7422D900FF5EDC /* AFNetworkReachabilityManager.m */,
+				2B2CF8C41D7422D900FF5EDC /* AFSecurityPolicy.h */,
+				2B2CF8C51D7422D900FF5EDC /* AFSecurityPolicy.m */,
+				2B2CF8C61D7422D900FF5EDC /* AFURLRequestSerialization.h */,
+				2B2CF8C71D7422D900FF5EDC /* AFURLRequestSerialization.m */,
+				2B2CF8C81D7422D900FF5EDC /* AFURLResponseSerialization.h */,
+				2B2CF8C91D7422D900FF5EDC /* AFURLResponseSerialization.m */,
+				2B2CF8CA1D7422D900FF5EDC /* AFURLSessionManager.h */,
+				2B2CF8CB1D7422D900FF5EDC /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		2B2CF8D91D74447900FF5EDC /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2B2CF8DA1D74447900FF5EDC /* MJExtension.h */,
+				2B2CF8DB1D74447900FF5EDC /* MJExtensionConst.h */,
+				2B2CF8DC1D74447900FF5EDC /* MJExtensionConst.m */,
+				2B2CF8DD1D74447900FF5EDC /* MJFoundation.h */,
+				2B2CF8DE1D74447900FF5EDC /* MJFoundation.m */,
+				2B2CF8DF1D74447900FF5EDC /* MJProperty.h */,
+				2B2CF8E01D74447900FF5EDC /* MJProperty.m */,
+				2B2CF8E11D74447900FF5EDC /* MJType.h */,
+				2B2CF8E21D74447900FF5EDC /* MJType.m */,
+				2B2CF8E31D74447900FF5EDC /* NSObject+MJCoding.h */,
+				2B2CF8E41D74447900FF5EDC /* NSObject+MJCoding.m */,
+				2B2CF8E51D74447900FF5EDC /* NSObject+MJKeyValue.h */,
+				2B2CF8E61D74447900FF5EDC /* NSObject+MJKeyValue.m */,
+				2B2CF8E71D74447900FF5EDC /* NSObject+MJProperty.h */,
+				2B2CF8E81D74447900FF5EDC /* NSObject+MJProperty.m */,
+				2B2CF8E91D74447900FF5EDC /* NSString+MJExtension.h */,
+				2B2CF8EA1D74447900FF5EDC /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		2BD913781D7128ED00EC3090 /* ZHWDatebase */ = {
+			isa = PBXGroup;
+			children = (
+				2BD9137C1D712A6700EC3090 /* fmdb */,
+				2BD9139A1D71339A00EC3090 /* ZHWDBHelper.h */,
+				2BD9139B1D71339A00EC3090 /* ZHWDBHelper.m */,
+			);
+			path = ZHWDatebase;
+			sourceTree = "<group>";
+		};
+		2BD9137C1D712A6700EC3090 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				2BD9137D1D712A6700EC3090 /* FMDatabase.h */,
+				2BD9137E1D712A6700EC3090 /* FMDatabase.m */,
+				2BD9137F1D712A6700EC3090 /* FMDatabaseAdditions.h */,
+				2BD913801D712A6700EC3090 /* FMDatabaseAdditions.m */,
+				2BD913811D712A6700EC3090 /* FMDatabasePool.h */,
+				2BD913821D712A6700EC3090 /* FMDatabasePool.m */,
+				2BD913831D712A6700EC3090 /* FMDatabaseQueue.h */,
+				2BD913841D712A6700EC3090 /* FMDatabaseQueue.m */,
+				2BD913851D712A6700EC3090 /* FMDB.h */,
+				2BD913861D712A6700EC3090 /* FMResultSet.h */,
+				2BD913871D712A6700EC3090 /* FMResultSet.m */,
+				2BD913881D712A6700EC3090 /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		2BEECA091D7021AC00A1C53D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2B2CF8D91D74447900FF5EDC /* MJExtension */,
+				2B2CF8BA1D741FC000FF5EDC /* ZHWNetWork */,
+				2BD913781D7128ED00EC3090 /* ZHWDatebase */,
+				2BEECA0A1D7021C600A1C53D /* ZHWEvent */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2BEECA0A1D7021C600A1C53D /* ZHWEvent */ = {
+			isa = PBXGroup;
+			children = (
+				2BEECA0B1D70221000A1C53D /* ZHWEventTool.h */,
+				2BEECA0C1D70221000A1C53D /* ZHWEventTool.m */,
+			);
+			path = ZHWEvent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B2BC5EB1D6EF1B400715D5F /* CalendarMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2BC6131D6EF1B400715D5F /* Build configuration list for PBXNativeTarget "CalendarMessage" */;
+			buildPhases = (
+				2B2BC5E81D6EF1B400715D5F /* Sources */,
+				2B2BC5E91D6EF1B400715D5F /* Frameworks */,
+				2B2BC5EA1D6EF1B400715D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalendarMessage;
+			productName = CalendarMessage;
+			productReference = 2B2BC5EC1D6EF1B400715D5F /* CalendarMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B2BC5FE1D6EF1B400715D5F /* CalendarMessageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2BC6161D6EF1B400715D5F /* Build configuration list for PBXNativeTarget "CalendarMessageTests" */;
+			buildPhases = (
+				2B2BC5FB1D6EF1B400715D5F /* Sources */,
+				2B2BC5FC1D6EF1B400715D5F /* Frameworks */,
+				2B2BC5FD1D6EF1B400715D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2BC6011D6EF1B400715D5F /* PBXTargetDependency */,
+			);
+			name = CalendarMessageTests;
+			productName = CalendarMessageTests;
+			productReference = 2B2BC5FF1D6EF1B400715D5F /* CalendarMessageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B2BC6091D6EF1B400715D5F /* CalendarMessageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2BC6191D6EF1B400715D5F /* Build configuration list for PBXNativeTarget "CalendarMessageUITests" */;
+			buildPhases = (
+				2B2BC6061D6EF1B400715D5F /* Sources */,
+				2B2BC6071D6EF1B400715D5F /* Frameworks */,
+				2B2BC6081D6EF1B400715D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2BC60C1D6EF1B400715D5F /* PBXTargetDependency */,
+			);
+			name = CalendarMessageUITests;
+			productName = CalendarMessageUITests;
+			productReference = 2B2BC60A1D6EF1B400715D5F /* CalendarMessageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B2BC5E41D6EF1B400715D5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = lb;
+				TargetAttributes = {
+					2B2BC5EB1D6EF1B400715D5F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2B2BC5FE1D6EF1B400715D5F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2B2BC5EB1D6EF1B400715D5F;
+					};
+					2B2BC6091D6EF1B400715D5F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2B2BC5EB1D6EF1B400715D5F;
+					};
+				};
+			};
+			buildConfigurationList = 2B2BC5E71D6EF1B400715D5F /* Build configuration list for PBXProject "CalendarMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B2BC5E31D6EF1B400715D5F;
+			productRefGroup = 2B2BC5ED1D6EF1B400715D5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B2BC5EB1D6EF1B400715D5F /* CalendarMessage */,
+				2B2BC5FE1D6EF1B400715D5F /* CalendarMessageTests */,
+				2B2BC6091D6EF1B400715D5F /* CalendarMessageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B2BC5EA1D6EF1B400715D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD9138E1D712A6700EC3090 /* Info.plist in Resources */,
+				2B2BC5F61D6EF1B400715D5F /* Assets.xcassets in Resources */,
+				2BF5037C1D76C3F2005486C3 /* quit.scpt in Resources */,
+				2BF5037A1D76C101005486C3 /* AppleScript脚本.scpt in Resources */,
+				2B2BC5F91D6EF1B400715D5F /* MainMenu.xib in Resources */,
+				2B2CF8B91D740E7100FF5EDC /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2BC5FD1D6EF1B400715D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2BC6081D6EF1B400715D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B2BC5E81D6EF1B400715D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2CF8D11D7422D900FF5EDC /* AFURLSessionManager.m in Sources */,
+				2B2CF8CE1D7422D900FF5EDC /* AFSecurityPolicy.m in Sources */,
+				2BF5037F1D76D640005486C3 /* HeartbeatModel.m in Sources */,
+				2B2BC5F41D6EF1B400715D5F /* main.m in Sources */,
+				2B2CF8EC1D74447900FF5EDC /* MJFoundation.m in Sources */,
+				2B2CF8CD1D7422D900FF5EDC /* AFNetworkReachabilityManager.m in Sources */,
+				2BD9139C1D71339A00EC3090 /* ZHWDBHelper.m in Sources */,
+				2B2CF8F21D74447900FF5EDC /* NSString+MJExtension.m in Sources */,
+				2BEECA0D1D70221000A1C53D /* ZHWEventTool.m in Sources */,
+				2B2CF8CC1D7422D900FF5EDC /* AFHTTPSessionManager.m in Sources */,
+				2B2CF8D81D74433600FF5EDC /* ServerResponseModel.m in Sources */,
+				2B2CF8B81D740E7100FF5EDC /* MainViewController.m in Sources */,
+				2BD913891D712A6700EC3090 /* FMDatabase.m in Sources */,
+				2B2CF8EB1D74447900FF5EDC /* MJExtensionConst.m in Sources */,
+				2B2CF8F11D74447900FF5EDC /* NSObject+MJProperty.m in Sources */,
+				2B2CF8BD1D741FD400FF5EDC /* ZHWNetwork.m in Sources */,
+				2BD9138D1D712A6700EC3090 /* FMResultSet.m in Sources */,
+				2B2BC5F11D6EF1B400715D5F /* AppDelegate.m in Sources */,
+				2BD9138B1D712A6700EC3090 /* FMDatabasePool.m in Sources */,
+				2B2CF8F01D74447900FF5EDC /* NSObject+MJKeyValue.m in Sources */,
+				2B2CF8EE1D74447900FF5EDC /* MJType.m in Sources */,
+				2B2CF8ED1D74447900FF5EDC /* MJProperty.m in Sources */,
+				2B2CF8EF1D74447900FF5EDC /* NSObject+MJCoding.m in Sources */,
+				2B2CF8CF1D7422D900FF5EDC /* AFURLRequestSerialization.m in Sources */,
+				2BD9138A1D712A6700EC3090 /* FMDatabaseAdditions.m in Sources */,
+				2B2CF8D01D7422D900FF5EDC /* AFURLResponseSerialization.m in Sources */,
+				2BD9138C1D712A6700EC3090 /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2BC5FB1D6EF1B400715D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2BC6041D6EF1B400715D5F /* CalendarMessageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2BC6061D6EF1B400715D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2BC60F1D6EF1B400715D5F /* CalendarMessageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B2BC6011D6EF1B400715D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2BC5EB1D6EF1B400715D5F /* CalendarMessage */;
+			targetProxy = 2B2BC6001D6EF1B400715D5F /* PBXContainerItemProxy */;
+		};
+		2B2BC60C1D6EF1B400715D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2BC5EB1D6EF1B400715D5F /* CalendarMessage */;
+			targetProxy = 2B2BC60B1D6EF1B400715D5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B2BC5F71D6EF1B400715D5F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B2BC5F81D6EF1B400715D5F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B2BC6111D6EF1B400715D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarMessage/Constant.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2B2BC6121D6EF1B400715D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalendarMessage/Constant.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2B2BC6141D6EF1B400715D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalendarMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.CalendarMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2B2BC6151D6EF1B400715D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalendarMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.CalendarMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2B2BC6171D6EF1B400715D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalendarMessageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.CalendarMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarMessage.app/Contents/MacOS/CalendarMessage";
+			};
+			name = Debug;
+		};
+		2B2BC6181D6EF1B400715D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalendarMessageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.CalendarMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarMessage.app/Contents/MacOS/CalendarMessage";
+			};
+			name = Release;
+		};
+		2B2BC61A1D6EF1B400715D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalendarMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.CalendarMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CalendarMessage;
+			};
+			name = Debug;
+		};
+		2B2BC61B1D6EF1B400715D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalendarMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.CalendarMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CalendarMessage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B2BC5E71D6EF1B400715D5F /* Build configuration list for PBXProject "CalendarMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2BC6111D6EF1B400715D5F /* Debug */,
+				2B2BC6121D6EF1B400715D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2BC6131D6EF1B400715D5F /* Build configuration list for PBXNativeTarget "CalendarMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2BC6141D6EF1B400715D5F /* Debug */,
+				2B2BC6151D6EF1B400715D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2BC6161D6EF1B400715D5F /* Build configuration list for PBXNativeTarget "CalendarMessageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2BC6171D6EF1B400715D5F /* Debug */,
+				2B2BC6181D6EF1B400715D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2BC6191D6EF1B400715D5F /* Build configuration list for PBXNativeTarget "CalendarMessageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2BC61A1D6EF1B400715D5F /* Debug */,
+				2B2BC61B1D6EF1B400715D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B2BC5E41D6EF1B400715D5F /* Project object */;
+}

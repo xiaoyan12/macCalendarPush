@@ -1,0 +1,16 @@
+//
+//  Constant.pch
+//  CalendarMessage
+//
+//  Created by 刘斌 on 16/8/30.
+//  Copyright © 2016年 lb. All rights reserved.
+//
+
+#ifndef Constant_pch
+#define Constant_pch
+
+#import <EventKit/EventKit.h>
+
+#import "MJExtension.h"
+
+#endif /* Constant_pch */
