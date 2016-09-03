@@ -103,7 +103,7 @@ static ZHWEventTool *defaultEvent = nil;
                 if ([participant.name containsString:@"@"]) {
                     if ((participant.participantStatus != EKParticipantStatusUnknown) &&
                         (participant.participantStatus != EKParticipantStatusPending)) {
-                        if (![_appleIDs containsObject:participant.name]) {
+                        if ([_appleIDs containsObject:participant.name]) {
                             [_appleIDs addObject:participant.name];
                             [ZHWDBHelper insertAppleId:participant.name];
                         }
@@ -115,6 +115,29 @@ static ZHWEventTool *defaultEvent = nil;
             resultBlock(_appleIDs);
         });
     });
+    
+    /*
+     * 对请求下来的邮箱都擦入到数据库
+     *
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(){
+        NSArray *events = [self allEvents];
+        for (EKEvent *event in events) {
+            for (EKParticipant *participant in event.attendees) {
+                if ([participant.name containsString:@"@"]) {
+                    if ([_appleIDs containsObject:participant.name]) {
+                        [_appleIDs addObject:participant.name];
+                        [ZHWDBHelper insertAppleId:participant.name];
+                   }
+                }
+            }
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            resultBlock(_appleIDs);
+        });
+    });
+
+  */
+    
 }
 
 

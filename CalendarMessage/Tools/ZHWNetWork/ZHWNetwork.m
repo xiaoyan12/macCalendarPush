@@ -12,7 +12,6 @@
 #import "ZHWEventTool.h"
 #import "HeartbeatModel.h"
 
-
 static NSInteger const kRequestTimeIntervalSecond = 40;//循环请求间隔
 static NSInteger const kRequestTimeOutSecond      = 15;//超时
 static AFHTTPSessionManager *manager = nil;
@@ -116,13 +115,12 @@ static AFHTTPSessionManager *manager = nil;
     //上传结果
     __weak typeof(self )weakSelf = self;
     [[ZHWEventTool defaultEventTool]getRealAppleIDs:^(NSArray *resultArray) {
-        NSLog(@"%@",resultArray);
+        NSLog(@"--%@",resultArray);
             // upload
         [weakSelf requestData:@"http://www.zuhaowan.com/ClientApi/IOS/getResult" params:@{@"appleId":resultArray} completion:^(id JSONObject) {
             
         }];
     }];
-
 }
 
 //粘贴板 邮箱处理
