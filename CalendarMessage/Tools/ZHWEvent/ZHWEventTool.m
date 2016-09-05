@@ -103,7 +103,7 @@ static ZHWEventTool *defaultEvent = nil;
                 if ([participant.name containsString:@"@"]) {
                     if ((participant.participantStatus != EKParticipantStatusUnknown) &&
                         (participant.participantStatus != EKParticipantStatusPending)) {
-                        if ([_appleIDs containsObject:participant.name]) {
+                        if (![_appleIDs containsObject:participant.name]) {
                             [_appleIDs addObject:participant.name];
                             [ZHWDBHelper insertAppleId:participant.name];
                         }
